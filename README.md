@@ -30,6 +30,4 @@ For any questions or contributions, feel free to reach out:
 ✉️ **Email**: richardkkonadu.com  
 📘 **LinkedIn**: [Richard Kwabena Konadu](https://linkedin.com/in/richardkkonau)  
 
----
 
-Would you like me to add anything specific? 😊
