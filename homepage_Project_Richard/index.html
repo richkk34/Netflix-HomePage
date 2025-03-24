@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Ghana - Watch TV Show </title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <!-- Creating Header with navigation bars -->
+     <div class="header">
+        <nav>     <!-- Use nav to style the image and the 2 buttons -->      
+            <img src="images/netflix_logo.png" class="logo">
+
+            <div>
+                <button class="language-btn"> English <img src="images/down-icon.png"></button >
+                <button>Sign In</button>
+                
+            </div>
+        </nav>
+
+       
+
+        <!-- Creating the Content of the webpage -->
+         <div class="header-content">   <!-- Use the class name to style all the context with this div tag -->
+
+            <h1> Unlimited movies, TV shows and more. </h1> <!-- We use the name tag to style h1,h3 & p tags -->
+            <h3> Starts at US$2.99. Cancel anytime </h3> 
+            <p> Ready to watch? Enter your email to create or restart your membership </p>
+        
+         <form class="email-signup">          <!-- We add an email sign up form tag -->
+            <input type="email" placeholder="Email Address" required>   <!-- Email is required -->
+                    
+            <button type="submit"> Get Started </button>   <!-- button to submit the email -->
+         </form>
+         </div>
+    </div>
+
+
+    <!-- ............... Carousel Section..................... -->
+
+    <section>
+        <div id="slideContainer">
+            <button id='prev' class="sliderBtn">&lt;
+                <button id="next" class="sliderBtn">&gt;</button>
+            </button>
+            <div class="slide show">
+              <img src="images/netflix_movie1.jpg" alt="slide1" />
+              <!-- <p>Slide No. 1</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie2.jpg" alt="slide2" />
+              <!-- <p>Slide No. 2</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie3.jpg" alt="slide3" />
+              <!-- <p>Slide No. 3</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie4.jpg" alt="slide4" />
+              <!-- <p>Slide No. 4</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie5.jpg" alt="slide5" />
+              <!-- <p>Slide No. 5</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie6.jpg" alt="slide6" />
+              <!-- <p>Slide No. 6</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie2.jpg" alt="slide6" />
+              <!-- <p>Slide No. 7</p> -->
+            </div>
+            <div class="slide">
+              <img src="images/netflix_movie5.jpg" alt="slide4" />
+              <!-- <p>Slide No. 8</p> -->
+            </div>
+          </div>
+    </section>    
+
+
+       
+    <!-- ................Feature Section .................... -->
+         <!-- The first div tag contains the navigations -->
+         <!-- The second div tag contains the content -->
+         <!-- The 3rd div tag will contain the features -->
+
+         <!-- The 1st div tag will contain the 1st features -->
+         <div class="features">
+            <div class="row">
+                <div class="text-col">  <!-- This div tag is for the text on the left -->
+                    <h2> Enjoy on your TV </h2>
+                    <p> Watch on a your TVs, PlayStation, Xbox, Chromecast, Apple TV, 
+                        Blu-ray players and more </p>
+                </div>
+
+                <div class="img-col">  <!-- This div tag is for the image column on the right -->
+                    <img src="images/blood-sisters.jpg">
+                </div>                 
+            </div>
+         </div>
+
+         <!-- The 2nd div tag will contain the 2nd features -->
+         <div class="features">
+            <div class="row">
+                <div class="img-col">  <!-- This div tag is for the image column on the right -->
+                    <img src="images/netflix_tablet.jpg">
+                </div>  
+
+                <div class="text-col">  <!-- This div tag is for the text on the left -->
+                    <h2> Download your shows to watch offline </h2>
+                    <p> Save your favourites easily and always have something to watch</p>
+                </div>               
+            </div>
+         </div>
+
+         <!-- The 3rd div tag will contain the 3rd features -->
+         <div class="features">
+            <div class="row">
+                <div class="text-col">  <!-- This div tag is for the text on the left -->
+                    <h2> Watch everywhere </h2>
+                    <p> Stream unlimited movies and TV shows on your phone, tablet, and TV </p>
+                </div>
+
+                <div class="img-col">  <!-- This div tag is for the image column on the right -->
+                    <img src="images/netflix_tv2.jpg">
+                </div>                 
+            </div>
+         </div>
+
+         <!-- The 4th div tag will contain the 4th features -->
+         <div class="features">
+            <div class="row">
+                <div class="img-col">  <!-- This div tag is for the image column on the right -->
+                    <img src="images/netflix_kids.jpg">
+                </div>  
+
+                <div class="text-col">  <!-- This div tag is for the text on the left -->
+                    <h2> Create profiles for children </h2>
+                    <p> Send children on adventures with their favourite characters
+                        in a space made just for them - free with your membership. </p>
+                </div>               
+            </div>
+         </div>
+
+         <!-- ............. Frequently asked questions section -->
+          <div class="faq">
+            <h2>Frequently Asked Question</h2>    <!-- This unordered list will hold the questions -->
+            <ul class="accordion">
+                <li>                                            <!-- This is the first list -->
+                    <input type="radio" name="accordion" id="first">
+                    <label for="first"> What is Netflix? </label>
+                    <div class="content">
+                        <p>Netflix is a global streaming service offering a vast library of movies, 
+                            TV shows, documentaries, and original 
+                            content for on-demand viewing across devices with subscription-based access. </p>
+                    </div>
+                </li>
+
+                <li>                                            <!-- This is the 2nd list -->
+                    <input type="radio" name="accordion" id="second">
+                    <label for="second"> How much does Netflix cost? </label>
+                    <div class="content">
+                        <p>Watch Netflix on your smartphone, Smart TV, laptop. or streaming devices, 
+                            ranges from US$2.99 to US$9.99 a month. No extra costs, no contract
+                        </p>
+                    </div>
+                </li>
+
+                <li>                                            <!-- This is the 3rd list -->
+                    <input type="radio" name="accordion" id="third">
+                    <label for="third"> Where can I watch Netflix ? </label>
+                    <div class="content">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the
+                            on the web at netflix.com from your personal computer or on any internet-connected
+                            device that offers the Netflix app, including smart TVs, smartphones, tablets, 
+                            streaming media players and game consoles.
+                        </p>
+                    </div>
+                </li>
+
+                <li>                                            <!-- This is the 4th list -->
+                    <input type="radio" name="accordion" id="fourth">
+                    <label for="fourth"> How do I cancel? </label>
+                    <div class="content">
+                        <p>Netflix is flexible. There is no pesky contract and no commitments. You can easily
+                            cancel your account offline in two clicks. There are no cancellation fees-start
+                        </p>
+                    </div>
+                </li>
+
+                <li>                                            <!-- This is the 5th list -->
+                    <input type="radio" name="accordion" id="fifth">
+                    <label for="fifth"> What can I watch on Netflix? </label>
+                    <div class="content">
+                        <p>Netflix has extensive library of feature films, documentaries, TV shows, anime,
+                            award-winning Netflix originals, and more. Watch as much you want, anytime you
+                            want.
+                        </p>
+                    </div>
+                </li>
+
+                <li>                                            <!-- This is the 6th list -->
+                    <input type="radio" name="accordion" id="sixth">
+                    <label for="sixth"> Is Netflix good for kids? </label>
+                    <div class="content">
+                        <p>The Netflix Kids experience is included in your membership to give parents control
+                            while enjoy family-friendly TV shows and movies in their own space.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <small>Ready to watch? Enter your email to create or restart your membership</small>
+            <form class="email-signup">          <!-- We add an email sign up form tag -->
+                <input type="email" placeholder="Email Address" required>   
+                        
+                <button type="submit"> Get Started </button>   <!-- button to submit the email -->
+             </form>
+          </div> <!-- Complete FAQ section -->
+
+          <!-- Creating the footer with the class name footer -->
+           <div class="footer">
+            <h2>Question? Contact us.</h2>
+
+            <div class="row">   <!-- 1st group of info on the footer 1st column -->
+                <div class="col">
+                    <a href="#"> FAQ </a>
+                    <a href="#"> Investor Relations </a>
+                    <a href="#"> Privicy </a>
+                    <a href="#"> Speed Test </a>
+                </div>
+
+                <div class="col"> <!-- 2nd group of info on the footer 2nd column -->
+                    <a href="#"> Help Center </a>
+                    <a href="#"> Jobs </a>
+                    <a href="#"> Cookies Preferences </a>
+                    <a href="#"> Legal Notices </a>
+                </div>
+
+                <div class="col"> <!-- 3rd group of info on the footer 3rd column -->
+                    <a href="#"> Account </a>
+                    <a href="#"> Ways to Watch </a>
+                    <a href="#"> Corporate Information </a>
+                    <a href="#"> Only on Netflix </a>
+                </div>
+
+                <div class="col"> <!-- 4th group of info on the footer 4th column -->
+                    <a href="#"> Media Center </a>
+                    <a href="#"> Terms of Use</a>
+                    <a href="#"> Contact us </a>                
+                </div>
+            </div>    <!-- Adding language button in the footer -->
+            <button class="language-btn"> English <img src="images/down-icon.png"></button >
+            <p class="copyright-text"> Netflix Ghana</p>
+           </div>   
+
+           <script src='script.js'></script>
+</body>
+</html>

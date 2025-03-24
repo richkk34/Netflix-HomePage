@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Calling backround with name tag: This sets the entire background of the page */
+body {
+    background: #000;   /* background colour = black */
+    color: #fff;  /* background text color = white */
+    text-align: center;
+}
+
+/* Styling header */
+.header{
+    width: 100%;
+    height: 100vh;     /* Setting background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/nextflix_background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;            /* 10px from top & bottom and 8% from left to right */
+    position:relative;
+}
+
+/* Using name tag nav to style the navigation bar */
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between; /* Create space btn the 2 div tags (logo & buttons) */
+    padding: 10px 0; /* 10px from top & bottom and 0 from left to right */
+
+}   
+
+/* Use the class name logo to style the logo */
+.logo{
+    width: 150px;  
+    cursor: pointer;   /* This turns the a hand when you hover on the logo */
+    
+}
+
+/* Stying the 2 buttons within the nav tag */
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px; /* change the border from rectangle to it current shape */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Stying the down icon in language */
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language-btn img{
+    width: 10px;
+    background: #fff;
+    margin-left: 10px; /* Create space btn the down icon & the text */
+}
+
+.header-content{
+    position: absolute;  
+    top: 50%;  /* Separate this div tag down from the nav div tag */
+    left: 50%;  /* creates left space for this div tag */
+    transform: translate(-50%, -50%); /* place this div tag exactly in the middle (50% left & 50% right) */
+    text-align: center;   /* Use center align for the text within the div tag */
+    margin-top: 100px;  /* shift the div tag down 100px*/
+   
+}
+
+/* Styling the contents within the header-content class by targeting h1, h3, <p> */
+.header-content h1{
+    font-size: 60px;  /* Increase font-size for h1 tag */
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+/* After stying h1, we then target h3 and style it */
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px; /* Creates bottom margin btn h3 and <p> tag */   
+}  /* I did not style <p>*/
+
+/* I then style the form using its class name */
+.email-signup{
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px; /* Created vertical space btn <p> and form tag */
+    overflow: hidden;  /* Hides the overflow or excess text in the input and submit tag */
+}
+
+/* I increase the text in the input field by targeting input tag*/
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+/* I design the button tag*/
+.email-signup button{
+    background: #db0001;  /* background of the button is set to red*/
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; 
+    padding: 15px 30px; /* The text in the button didn't look good until the padding was added*/
+
+}
+
+/* ................ Starting CSS for feature section........................ */
+/* I style the feature class that contain text on left and blood sisters movie on right */
+.features{
+    padding: 50px 12%;   /* 50px from top and bottom 12% from left*/
+    font-size: 22px;   
+} 
+
+/* styling the row */
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;  /* This cause the text to automatically moves to the next line*/
+    padding: 50px 0;
+}
+
+/* styling the text column in the row class*/
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+/* styling the text column in the row class*/
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+/* styling the img column in the row class*/
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+/* styling the h2 tag in feature classs*/
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ...............Styling the frequently asked questions main div class */
+.accordion{
+    margin: 60px auto;  /* Create vertical space btn the list of question and the main title Frequent Asked Question*/
+    width: 100%;
+    max-width: 750px; /* Specifies the maximum width for the text within the div tag*/
+}
+
+/* CSS for the list within the the div tag accordion*/
+.accordion li{
+    list-style: none;   /* Removes the dots in front of the list*/
+    width: 100%;
+    padding: 5px;    /* Creates vertical space btn each list*/
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;  /* Changes the background around the question and put the questions in a box*/
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Adding the + button at the end of each box*/
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s; /* transition to turn the + icon to a closed icon*/
+}
+
+/* Hidding the check box*/
+input[type="radio"]{
+    display: none;
+}
+
+/* Styling the answers to each question*/
+/* Within the ul tag class= "accordion", I want to style the class= "content" */
+.accordion .content {
+    background: #303030;
+    text-align: left;   /* Changes the text alignment from center to left*/
+    padding: 0 20px;
+    max-height: 0;  /* Caueses the questions answers to be hidden from the screen*/
+    overflow: hidden;  /* Now all the answers details are hidden */
+    transition: max-height 0.5s, padding 0.5s;
+    /* The display of the answers comes immediately so we have to delay it a little bit by adding transition*/
+}
+
+/* I then want to display the details or answers when I click on any question*/
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px; /* Now when you click on any question the answer become visible*/
+}
+
+/* I want the + icon to become a closed icon when a question is closed (rotate and turn into closed icon)*/
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);   /* The + icon then rotates to become a closed icon after 5s */
+}
+
+/* Styling the sign-up form at the within the faq div tag */
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+} 
+
+/* Styling the text in the <small> tag with faq div tag */
+.faq small{
+    font-size: 13px;   
+}
+
+/* ........... Styling the contents on the footer............................ */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #303030;  /* Places a border on top of the footer to separate it from the main content */
+    color: #777; /* Change font color for the text with the class="footer" */
+}
+
+/* Styling h2 within footer class */
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Styling text in the footer with class="col" */
+.footer .col{
+    flex-basis: 25%;    /* Turns the text into 4 column each taking 25% of the width */
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Styling the links in the footer targeting <a> tag */
+.footer .col a{
+    display: block;  /* Turns the links in each of the 4 column into block. */
+    text-decoration: none;
+    color: #777; /* Changes the link colours from blue to current colour */
+    font-size: 14px;
+    margin-bottom: 10px; /* Creates bottom margins to separate the links */
+}
+
+/* Adjust the content in the 4th column of the footer bcos it has only 3 items unlike the rest with 4 item */
+/* Eliminating the first column on top */
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0; /* Now all the links are starting from the same position from the top */
+}
+
+/* CSS for the language button in the footer */
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    
+}
+
+/* CSS for the Netflix Ghana text in the footer */
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* ........................CSS for Carousel ................... */
+#slideContainer {
+    width: 600px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    /* top: 100%; */
+    transform: translate(-50%, -50%);
+  }
+  .sliderBtn {
+    position: absolute;
+    background-color: rgba(48, 5, 50, 0.5);
+    border: none;
+    color: white;
+    padding: 1rem;
+    top: calc(50% - 1rem - 27px);
+    z-index: 999;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+  }
+  .sliderBtn:hover {
+    background-color: rgba(48, 5, 50, 1);
+  }
+  #prev {
+    left: 0;
+  }
+  #next {
+    right: 0;
+  }
+  .slide {
+    display: none;
+  }
+  .show {
+    display: block;
+    animation: fadein 1s ease-in-out 0s 1 normal forwards;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slide p {
+    padding: 1rem 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 600;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
+    display: block;
+    margin: auto;
+  
+
+/* .................................................................. */
+
+/* ....... Media Queries: This makes the page look good on a smaller screen */
+/* Every CSS style I add to media queries apply to only a smaller screen */
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;                     /* logo size is too big for a smaller screen so it is fixed */
+    }
+    nav button{
+        padding: 5px 10px;                 /* Fixing the navigation buttons for a smaller screen */
+    }
+    nav .language-btn{
+        padding: 4px 10px;
+    }
+    .header-content{  
+        position: unset;                /* Fixing how the main content or header content look on a small screen */
+        transform: none;
+        padding-top: 150px;       
+    }
+    .header-content h1{                 /* Fixing the h1 tag in the header content */
+        font-size: 30px;
+    }
+    .email-signup button{         /* Fixing the email-signup button tag in the header content */
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-col, .img-col{         /* Fixing how the main text and images look on a smaller screen */
+        flex-basis: 100%;    /* Here it will use the full width for a smaller screen */
+    }
+    .features h2{           /* Decrease the font-size of the h2 text on a smaller screen */
+        font-size: 30px;
+    }
+    .features p{           /* Decrease the font-size of the <p> text on a smaller screen */
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label{
+        padding: 10px;
+        font-size: 10px;
+    }
+    label::after{
+        font-size: 22px;
+        
+    }
+    #slideContainer {
+        width: 100%;
+      }
+      .sliderBtn {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+      .slide p {
+        padding: 0.5rem 0;
+      }
+    } 
+}
